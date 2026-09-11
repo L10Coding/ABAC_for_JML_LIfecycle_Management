@@ -5,9 +5,13 @@
 
 💻
 
+
+
 ## 📘 Project Overview
 
 This project showcases an implemented Joiner, Mover, Leaver (JML) lifecycle. 
+
+
 
 
 In this project, I implemented a Joiner–Mover–Leaver (JML) model where **user attributes** automatically controlled:
