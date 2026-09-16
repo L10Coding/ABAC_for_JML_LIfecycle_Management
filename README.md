@@ -35,7 +35,7 @@ Third User:
 
 Created Dynamic Groups that will assign membership according to the user's attributes (Job Title):
 
-<img width="1000" height="800" alt="User Adam Brown confirmation" src="images/Dynamic Group Creation - Marketing.jpg"/> 
+
 
 Policy ran correctly, and now shows the Marketing user(s) as a member of the Dynamic Group "DG-Marketing-Users":
 
