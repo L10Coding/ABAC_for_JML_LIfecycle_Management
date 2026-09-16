@@ -17,8 +17,8 @@ I created three users: Adam Brown, Jason Jones and Michelle Smith
 
 | User | Department | Job Title |
 |-----|------------|-----------|
-| Michelle Smith | Human Resources | Human Resources Analyst |
+| Adam Brown | Marketing | Content Strategist
 | Jason Jones | Sales | Sales Analyst |
-| Adam Brown | Marketing | Content Strategist |
+| Michelle Smith | Human Resources | Human Resources Analyst |
 
-
+<img width="100" height="800" alt="User Adam Brown confirmation" src=" "/> 
