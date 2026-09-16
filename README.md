@@ -11,9 +11,6 @@ This project showcases use of **Attribute Based Access Controls (ABAC)** to impl
 **ABAC's** are utilized to automatically control: Group Membership, Access to Applications, Enforcement of Conditional Access policies, and Revoking Access for applicable staff members.
 
 
-
-
-
 In this project, I implemented a Joiner–Mover–Leaver (JML) model where **user attributes** automatically controlled:
 
 - Group membership
@@ -24,8 +21,14 @@ In this project, I implemented a Joiner–Mover–Leaver (JML) model where **use
 All behavior was validated using group membership, jwt.ms token inspection, and sign-in logs.
 <img width="450" height="250" alt="image" src="images/User-Brees.jpg">
 
-##   Project Summary
+##   Adding Users to the environment
 
-This project documents the 
+I created three users: Adam Brown, Jason Jones and Michelle Smith
+
+| User | Department | Job Title |
+|-----|------------|-----------|
+| Michelle Smith | Human Resources | Human Resources Analyst |
+| Jason Jones | Sales | Sales Analyst |
+| Adam Brown | Marketing | Content Strategist |
 
 
