@@ -5,11 +5,11 @@
 
 💻
 
-
-
 ## 📘 Project Overview
 
-This project showcases an implemented Joiner, Mover, Leaver (JML) lifecycle. 
+This project showcases use of **Attribute Based Access Controls (ABAC)** to implement a Joiner, Mover, Leaver (JML) lifecycle for employees at Indigo Blue Technology. 
+RBAC's are utilized to automatically control: Group Membership, Access to Applications, Enforcement of Conditional Access policies, and Revoking Access for applicable staff members.
+
 
 
 
