@@ -23,11 +23,11 @@ I created three users: Adam Brown, Jason Jones and Michelle Smith
 
 ##   Confirmations
 First User:
-<img width="100" height="800" alt="User Adam Brown confirmation" src="images/Adam Brown - Properties.jpg"/> 
+<img width="1000" height="800" alt="User Adam Brown confirmation" src="images/Adam Brown - Properties.jpg"/> 
 
 Second User:
-<img width="100" height="800" alt="User Adam Brown confirmation" src="images/Jason Jones - Properties.jpg"/> 
+<img width="1000" height="800" alt="User Adam Brown confirmation" src="images/Jason Jones - Properties.jpg"/> 
 
 Third User:
-<img width="100" height="800" alt="User Adam Brown confirmation" src="images/Michelle Smith - Properties.jpg"/> 
+<img width="1000" height="800" alt="User Adam Brown confirmation" src="images/Michelle Smith - Properties.jpg"/> 
 
