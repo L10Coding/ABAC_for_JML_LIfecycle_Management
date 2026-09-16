@@ -21,4 +21,13 @@ I created three users: Adam Brown, Jason Jones and Michelle Smith
 | Jason Jones | Sales | Sales Analyst |
 | Michelle Smith | Human Resources | Human Resources Analyst |
 
-<img width="100" height="800" alt="User Adam Brown confirmation" src=" "/> 
+##   Confirmations
+First User:
+<img width="100" height="800" alt="User Adam Brown confirmation" src="images/Adam Brown - Properties.jpg"/> 
+
+Second User:
+<img width="100" height="800" alt="User Adam Brown confirmation" src="images/Jason Jones - Properties.jpg"/> 
+
+Third User:
+<img width="100" height="800" alt="User Adam Brown confirmation" src="images/Michelle Smith - Properties.jpg"/> 
+
