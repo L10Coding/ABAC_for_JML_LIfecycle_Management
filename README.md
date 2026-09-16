@@ -8,11 +8,8 @@
 ## 📘 Project Overview
 
 This project showcases use of **Attribute Based Access Controls (ABAC)** to implement a Joiner, Mover, Leaver (JML) lifecycle for employees at Indigo Blue Technology. 
-**ABAC's** are utilized to automatically control: Group Membership, Access to Applications, Enforcement of Conditional Access policies, and Revoking Access for applicable staff members.
+**ABAC's** are utilized to automatically control: Group Membership, Access to Applications, Enforcement of Conditional Access policies, and Revoking Access for applicable staff members. Tasks were confirmed using Group Membership and Sign-In logs.
 
-
-All behavior was validated using group membership, jwt.ms token inspection, and sign-in logs.
-<img width="450" height="250" alt="image" src="images/User-Brees.jpg">
 
 ##   Adding Users to the environment
 
