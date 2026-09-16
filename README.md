@@ -31,3 +31,7 @@ Second User:
 Third User:
 <img width="1000" height="800" alt="User Adam Brown confirmation" src="images/Michelle Smith - Properties.jpg"/> 
 
+##  📝 Creatinging Dynamic Security Groups
+
+Created Dynamic Groups that will assign membership according to the user's attributes (Job Title):
+
