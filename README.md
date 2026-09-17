@@ -14,11 +14,13 @@ By leveraging core user attributes (such as Department and Job Title) as a dynam
 - **Instant Risk Mitigation:** Secured corporate data by verifying that disabled "Leaver" accounts are immediately blocked from all enterprise resources.
 - **Audit-Ready Infrastructure:** Validated every identity lifecycle transition using Entra ID Sign-In and Audit logs to prove compliance.
 
-## 📘 Project Overview
+# 📘 Project Overview
 
-This project showcases use of **Attribute Based Access Controls (ABAC)** to implement a Joiner, Mover, Leaver (JML) lifecycle for employees at Indigo Blue Technology. 
-**ABAC's** are utilized to automatically control: Group Membership, Access to Applications, Enforcement of Conditional Access policies, and Revoking Access for applicable staff members. Tasks were confirmed using Group Membership and Sign-In logs.
-
+This project showcases the practical implementation of ABAC to control identity lifecycles. The system uses account attributes to automatically handle:
+- Group Membership
+- Application Access
+- Conditional Access Policies
+- Account Revocation
 
 ##   Adding Users to the environment
 
