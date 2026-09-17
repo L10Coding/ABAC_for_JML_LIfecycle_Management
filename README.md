@@ -53,11 +53,14 @@ Created Dynamic Groups that will assign membership according to the user's attri
 <img width="1000" height="800" alt="Dynamic Group Membership - Marketing" src="images/Dynamic Group Membership - Marketing.jpg"/> 
 
 
-## 🔧 Created an Enterprise App (CA-Policy-Test-App) with SSO and SAML configured for users to access the app utilizing their Entra ID credentials.
+## 🔧 Created an Enterprise App (CA-Policy-Test-App):
 
-<img width="1000" height="800" alt="Zoom Configuration" src=" "/> 
+- Configured access to `CA-Policy-Test-App` to require assignment, and then added two of my Dynamic Groups. This ensures access to the application is based on attributes of users.
+- Configured SSO and SAML for users to access utilizing their Entra ID credentials.
 
-<img width="1000" height="800" alt="Zoom Assigned Groups" src=" "/> 
+<img width="1000" height="800" alt="Policy-Test App Configuration" src="images/CA-CA Policy Test App - Properties.png "/> 
+
+<img width="1000" height="800" alt="Policy-Test App Assigned Groups" src="images/CA-CA Policy Test App - Applicable Groups.png "/> 
 
 
 ## 🔐 Establishing Conditional Access Policies according to Dynamic Group/Department
@@ -67,14 +70,14 @@ Created Dynamic Groups that will assign membership according to the user's attri
 | Marketing | Require MFA |
 | Sales | Session Controls |
 
-<img width="1000" height="800" alt="CA Policy - Selecting Group - Marketing" src="images/CA Policy - Selecting Group.png"/> 
+<img width="1000" height="800" alt="Policy-Test App - Marketing" src="images/CA - CA Policy Test App  - Configuration - Marketing.png"/> 
 
-<img width="1000" height="800" alt="CA Policy - Selecting Resource - Marketing" src="images/CA Policy - Selecting Resource.png"/> 
+<img width="1000" height="800" alt="Policy-Test App - Targeted Resources" src="images/CA - CA Policy Test App - Marketing - Targeted Resources.png"/> 
 
-<img width="1000" height="800" alt="CA Policy - Granting Access Requirement - Marketing" src="images/CA Policy - Granting Access Requirement.png"/> 
+<img width="1000" height="800" alt="Policy-Test App - MFA Requirement" src="images/CA - CA Policy Test App - Marketing - MFA.png"/> 
 
-<img width="1000" height="800" alt="CA Policy - Selecting Group - Sales" src="images/CA Policy - Selecting Group - Sales.png"/> 
+<img width="1000" height="800" alt="Policy-Test App - Sales" src="images/CA - CA Policy Test App - Sales - Selected Group.png"/> 
 
-<img width="1000" height="800" alt="CA Policy - Selecting Resource - Sales" src="images/CA Policy - Selecting Resource - Sales.png"/> 
+<img width="1000" height="800" alt="Policy-Test App - Targeted Resources" src="images/CA - CA Policy Test App - Sales - Targeted Resource.png"/> 
 
-<img width="1000" height="800" alt="CA Policy - Granting Session Control - Sales" src="images/CA Policy - Session Control - Sales.png"/> 
+<img width="1000" height="800" alt="Policy-Test App - Session Control" src="images/CA - CA Policy Test App - Sales - Session Control.png"/> 
