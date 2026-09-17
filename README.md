@@ -64,5 +64,9 @@ Created Dynamic Groups that will assign membership according to the user's attri
 
 <img width="1000" height="800" alt="CA Policy - Selecting Group - Marketing" src="images/CA Policy - Selecting Group.png"/> 
 
+<img width="1000" height="800" alt="CA Policy - Selecting Resource - Marketing" src="images/CA Policy - Selecting Resource.png"/> 
+
+<img width="1000" height="800" alt="CA Policy - Granting Access Requirement - Marketing" src="images/CA Policy - Granting Access Requirement.png"/> 
+
 <img width="1000" height="800" alt="CA Policy - Selecting Group - Sales" src="images/CA Policy - Selecting Group - Sales.png"/> 
 
