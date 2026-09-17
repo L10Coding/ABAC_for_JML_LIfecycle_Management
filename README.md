@@ -108,10 +108,11 @@ User `Adam Brown` is moving to a new department:
 - Access to `CA-Policy-Test-App` remains, and the `Conditional Access policy` established for the `Sales` team now applies.
 - Automated process allows for RBAC to be implemented.
 
-<img width="1000" height="800" alt="User Sign-In Audit Logs Confirmation" src="Mover - Updating Properties - Adam Brown.png"/> 
+<img width="1000" height="800" alt="Updating user properties" src="Mover - Updating Properties - Adam Brown.png"/> 
 
-<img width="1000" height="800" alt="User Sign-In Audit Logs Confirmation" src="images/Mover - New DG - Adam Brown.png"/> 
+<img width="1000" height="800" alt="User's new dynamic group assignment" src="images/Mover - New DG - Adam Brown.png"/> 
 
+<img width="1000" height="800" alt="User Sign-In Log Confirmation" src="images/Mover - App Sign-in Log - Adam Brown.png"/> 
 
-
+<img width="1000" height="800" alt="User Sign-In Audit Logs Confirmation" src="images/Mover - Sign-in Activity - Adam Brown.png"/> 
 
