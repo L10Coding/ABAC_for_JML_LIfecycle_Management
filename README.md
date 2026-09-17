@@ -3,7 +3,6 @@
 **Platform:** Microsoft Entra ID  
 **Focus:** Identity Lifecycle Management, Automation, Dynamic Groups, Enterprise App Access, Conditional Access**
 
-💻
 
 ## 📘 Project Overview
 
@@ -81,3 +80,14 @@ Created Dynamic Groups that will assign membership according to the user's attri
 <img width="1000" height="800" alt="Policy-Test App - Targeted Resources" src="images/CA - CA Policy Test App - Sales - Targeted Resource.png"/> 
 
 <img width="1000" height="800" alt="Policy-Test App - Session Control" src="images/CA - CA Policy Test App - Sales - Session Control.png"/> 
+
+
+## 📘 Joiner of J-M-L:
+
+User `Jason Jones` signing in:
+- Access to `CA-Policy-Test-App` confirmed via `Sign-In` and `Audit` logs
+- User was prompted to update their password upon signing-in for the first time
+- User was prompted to utilize MS Authenticator and was able to successfully enroll.
+- Sign-In logs confirmed the `Conditional Access Policy` was triggered and user successfully met the requirement.
+
+<img width="1000" height="800" alt="User Sign-In password prompt" src="images/User Sign-In - Jason  - Password Prompt.png"/> 
