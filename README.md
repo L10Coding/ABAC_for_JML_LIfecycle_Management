@@ -9,10 +9,10 @@ In modern enterprise environments, managing user access manually creates operati
 By leveraging core user attributes (such as Department and Job Title) as a dynamic source of truth, this architecture eliminates the need for manual administrative tickets. It automatically provisions resources for new hires, realigns security boundaries during internal role changes, and enforces instant access revocation during offboarding. The entire lifecycle is wrapped in context-aware Conditional Access (CA) policies to ensure a zero-trust security posture.
 
 # 🚀 Key Takeaways & Business Impact
-- Zero-Touch Provisioning: Reduced administrative overhead by automating group memberships and application assignments.
-- Elimination of Access Creep: Solved a major compliance issue by ensuring users automatically lose old privileges when changing roles.
-- Instant Risk Mitigation: Secured corporate data by verifying that disabled "Leaver" accounts are immediately blocked from all enterprise resources.
-- Audit-Ready Infrastructure: Validated every identity lifecycle transition using Entra ID Sign-In and Audit logs to prove compliance.
+- **Zero-Touch Provisioning:** Reduced administrative overhead by automating group memberships and application assignments.
+- **Elimination of Access Creep:** Solved a major compliance issue by ensuring users automatically lose old privileges when changing roles.
+- **Instant Risk Mitigation:** Secured corporate data by verifying that disabled "Leaver" accounts are immediately blocked from all enterprise resources.
+- **Audit-Ready Infrastructure:** Validated every identity lifecycle transition using Entra ID Sign-In and Audit logs to prove compliance.
 
 ## 📘 Project Overview
 
