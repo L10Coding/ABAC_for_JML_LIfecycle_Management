@@ -3,10 +3,14 @@
 **Platform:** Microsoft Entra ID  
 **Focus:** Identity Lifecycle Management (ILM), Automation, Dynamic Groups, Enterprise App Access, Conditional Access (CA)**
 
+---
+
 # 👔 Executive Summary
 In modern enterprise environments, managing user access manually creates operational bottlenecks and severe security vulnerabilities. This project demonstrates a fully automated Joiner-Mover-Leaver (JML) identity lifecycle built in Microsoft Entra ID using Attribute-Based Access Control (ABAC).
 
 By leveraging core user attributes (such as Department and Job Title) as a dynamic source of truth, this architecture eliminates the need for manual administrative tickets. It automatically provisions resources for new hires, realigns security boundaries during internal role changes, and enforces instant access revocation during offboarding. The entire lifecycle is wrapped in context-aware Conditional Access (CA) policies to ensure a zero-trust security posture.
+
+---
 
 # 🚀 Key Takeaways & Business Impact
 - **Zero-Touch Provisioning:** Reduced administrative overhead by automating group memberships and application assignments.
@@ -14,17 +18,27 @@ By leveraging core user attributes (such as Department and Job Title) as a dynam
 - **Instant Risk Mitigation:** Secured corporate data by verifying that disabled "Leaver" accounts are immediately blocked from all enterprise resources.
 - **Audit-Ready Infrastructure:** Validated every identity lifecycle transition using Entra ID Sign-In and Audit logs to prove compliance.
 
+---
+
 # 📘 Project Overview
 
 This project showcases the practical implementation of ABAC to control identity lifecycles. The system uses account attributes to automatically handle:
-- Group Membership
-- Application Access
-- Conditional Access Policies
-- Account Revocation
+- *Group Membership*
+- *Application Access*
+- *Conditional Access Policies*
+- *Account Revocation*
 
-##   Adding Users to the environment
+I used Entra ID Group membership and Sign-In/Audit Logs to verify that every step worked as intended.
 
-I created three users: Adam Brown, Jason Jones and Michelle Smith
+---
+
+# 👥 Phase 1: The "Joiner" Process (User Onboarding)
+The **Joiner** phase focuses on onboarding new hires safely and quickly. When a user account is created with specific corporate attributes, Entra ID places them into the correct security boundaries automatically.
+
+
+## 1.  Adding Users to the environment
+
+I created three users with different department and title attributes: Adam Brown, Jason Jones and Michelle Smith
 
 | User | Department | Job Title |
 |-----|------------|-----------|
@@ -32,7 +46,7 @@ I created three users: Adam Brown, Jason Jones and Michelle Smith
 | Jason Jones | Sales | Sales Analyst |
 | Michelle Smith | Human Resources | Human Resources Analyst |
 
-##   Confirmations
+##   Configuration proof:
 First User:
 <img width="1000" height="800" alt="User Adam Brown confirmation" src="images/Adam Brown - Properties.jpg"/> 
 
@@ -42,10 +56,14 @@ Second User:
 Third User:
 <img width="1000" height="800" alt="User Michelle Smith confirmation" src="images/Michelle Smith - Properties.jpg"/> 
 
+---
 
-##  📝 Creating Dynamic Security Groups
+## 2. Creating Dynamic Security Groups
 
-Created Dynamic Groups that will assign membership according to the user's attributes (Job Title):
+I built **Dynamic Groups** that will access user atributes to manage membership automatically.
+
+**Verification of Automated Membership:**
+The system scanned the user attributes and automatically sorted the users into their proper groups.
 
 <img width="1000" height="800" alt="Dynamic Group Creation - Marketing" src="images/Dynamic Group Creation - Marketing.jpg"/> 
 
@@ -63,18 +81,23 @@ Created Dynamic Groups that will assign membership according to the user's attri
 
 <img width="1000" height="800" alt="Dynamic Group Membership - Marketing" src="images/Dynamic Group Membership - Marketing.jpg"/> 
 
+---
 
-## 🔧 Created an Enterprise App (CA-Policy-Test-App):
+## 3. Setting Up the Enterprise App `(CA-Policy-Test-App)`:
 
-- Configured access to `CA-Policy-Test-App` to require assignment, and then added two of my Dynamic Groups. This ensures access to the application is based on attributes of users.
-- Configured SSO and SAML for users to access utilizing their Entra ID credentials.
+Deployed a test app named `CA-Policy-Test-App` and configured it for secure access:
+- Enabled the Assignment Required setting, so that only designated users can access.
+- Assigned the Dynamic Groups to the app.
+- Configured Single Sign-On (SSO) and SAML, so that users can sign in securely with their Entra ID credentials.
 
 <img width="1000" height="800" alt="Policy-Test App Configuration" src="images/CA-CA Policy Test App - Properties.png "/> 
 
 <img width="1000" height="800" alt="Policy-Test App Assigned Groups" src="images/CA-CA Policy Test App - Applicable Groups.png "/> 
 
+---
 
-## 🔐 Establishing Conditional Access Policies according to Dynamic Group/Department
+## 4. Establishing Conditional Access Policies according to Dynamic Group/Department
+To add an additional layer of protection, I created specific security rules tailored to each group's attributes:
 
 | Group | Controls |
 |------|----------|
@@ -94,13 +117,12 @@ Created Dynamic Groups that will assign membership according to the user's attri
 <img width="1000" height="800" alt="Policy-Test App - Session Control" src="images/CA - CA Policy Test App - Sales - Session Control.png"/> 
 
 
-## 📘 Joiner of J-M-L:
+## 5. Testing the **Joiner** Experience:
 
-User `Jason Jones` signing in:
+Logged in as user `Jason Jones` to verify the onboarding workflow:
 - User was prompted to update their password upon signing-in for the first time
 - User was prompted to utilize MS Authenticator and was able to successfully enroll.
-- Access to `CA-Policy-Test-App` confirmed via `Sign-In` and `Audit` logs
-- Sign-In Activity logs confirmed the `Conditional Access Policy` was triggered and user successfully met the requirement, and the Conditional Access policy for the Marketing team was not applied to this member of the Sales team.
+- Logs confirmed the Sales Session Control policy triggered correctly, and the Marketing MFA policy did not affect him, proving the policy targets users accurately.
 
 <img width="1000" height="800" alt="User Sign-In password prompt" src="images/User Sign-In - Jason  - Password Prompt.png"/> 
 
@@ -111,14 +133,16 @@ User `Jason Jones` signing in:
 <img width="1000" height="800" alt="User Sign-In Audit Logs Confirmation" src="images/App Sign-In Activity Details - Jason Jones.png"/> 
 
 
-## 📘 Mover of J-M-L:
+## 🔄 Phase 2: The "Mover" Process (Role Transitions):
 
-User `Adam Brown` is moving to a new department:
-- User's profile attributes were updated to reflect new department (Marketing -> Sales)
-- No longer can access `Marketing` resources
-- Now able to access `Sales` resources
-- Access to `CA-Policy-Test-App` remains, and the `Conditional Access policy` established for the `Sales` team now applies.
-- Automated process allows for RBAC to be implemented.
+The **Mover** phase handles internal job changes. ABAC solves access creep—the dangerous problem where employees keep old permissions when they switch roles.
+
+Role transition scenario:
+- Changed `Adam Brown's` attributes to move him from Marketing to Sales.
+- The Automation works: Changing his profile attributes triggered recalculation of his groups/memberships.
+- Old Access Dropped: He was removed from **Marketing** and lost access to Marketing resources.
+- New Access Granted: He was added to **Sales** and gained access to Sales tools.
+- Security Updated: His access to `CA-Policy-Test-App` remained, and the **Sales Session Control** policy applied to him automatically. 
 
 <img width="1000" height="800" alt="Updating user properties" src="Mover - Updating Properties - Adam Brown.png"/> 
 
@@ -128,12 +152,16 @@ User `Adam Brown` is moving to a new department:
 
 <img width="1000" height="800" alt="User Sign-In Audit Logs Confirmation" src="images/Mover - Sign-in Activity - Adam Brown.png"/> 
 
-## 📘 Leaver of J-M-L:
+## 🚪 Phase 3: The "Leaver" Process (Offboarding & De-provisioning):
+The Leaver phase secures the business when a worker departs. Disabling access quickly stops former workers from accessing company files from the outside.
 
-User `Michelle Smith` is leaving the organization.
-- Users profile was disabled via user properties
-- User was unable to sign-in
-- Sign-in logs indicate an unsuccessfull log-in
+Offboarding Scenario:
+
+`Michelle Smith` left the organization. I disabled her profile to simulate the leaver workflow.
+
+- Instant Lockdown: The account status changed to disabled
+- Sign-In Blocked: Michelle was stopped at the front door during her next sign-in attemptl
+- Audit Proof: The Entra ID Sign-In logs caught the failed attempt and flagged it as an unsuccessful login due to a disabled account.
 
 <img width="1000" height="800" alt="Account disabled in Entra ID" src="images/Leaver - Account Disabled - Michelle Smith.png"/> 
 
