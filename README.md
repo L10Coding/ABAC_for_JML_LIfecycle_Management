@@ -26,20 +26,24 @@ First User:
 <img width="1000" height="800" alt="User Adam Brown confirmation" src="images/Adam Brown - Properties.jpg"/> 
 
 Second User:
-<img width="1000" height="800" alt="User Adam Brown confirmation" src="images/Jason Jones - Properties.jpg"/> 
+<img width="1000" height="800" alt="User Jason Jones confirmation" src="images/Jason Jones - Properties.jpg"/> 
 
 Third User:
-<img width="1000" height="800" alt="User Adam Brown confirmation" src="images/Michelle Smith - Properties.jpg"/> 
+<img width="1000" height="800" alt="User Michelle Smith confirmation" src="images/Michelle Smith - Properties.jpg"/> 
 
 ##  📝 Creatinging Dynamic Security Groups
 
 Created Dynamic Groups that will assign membership according to the user's attributes (Job Title):
 
-<img width="1000" height="800" alt="User Adam Brown confirmation" src="images/Dynamic Group Creation - Marketing.jpg"/> 
+<img width="1000" height="800" alt="Dynamic Group List" src="images/Dynamic Group List.png"/> 
+
+
+
+<img width="1000" height="800" alt="Dynamic Group Creation - Marketing" src="images/Dynamic Group Creation - Marketing.jpg"/> 
 
 
 
 Policy ran correctly, and now shows the Marketing user(s) as a member of the Dynamic Group "DG-Marketing-Users":
 
-<img width="1000" height="800" alt="User Adam Brown confirmation" src="images/Dynamic Group Membership - Marketing.jpg"/> 
+<img width="1000" height="800" alt="Dynamic Group Membership - Marketing" src="images/Dynamic Group Membership - Marketing.jpg"/> 
 
