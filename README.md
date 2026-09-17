@@ -41,7 +41,11 @@ Created Dynamic Groups that will assign membership according to the user's attri
 
 <img width="1000" height="800" alt="Dynamic Group List" src="images/Dynamic Groups List.png"/> 
 
-**Policy ran correctly, and now shows the Marketing user(s) as a member of the Dynamic Group "DG-Marketing-Users":
-**
+**Policy ran correctly, and now shows the Marketing user(s) as a member of the Dynamic Group "DG-Marketing-Users":**
+
+<img width="1000" height="800" alt="Dynamic Group Membership - HR" src="images/Dynamic Group Membership - HR.jpg"/> 
+
+<img width="1000" height="800" alt="Dynamic Group Membership - Sales" src="images/Dynamic Group Membership - Sales.jpg"/> 
+
 <img width="1000" height="800" alt="Dynamic Group Membership - Marketing" src="images/Dynamic Group Membership - Marketing.jpg"/> 
 
