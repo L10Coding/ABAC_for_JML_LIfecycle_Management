@@ -35,7 +35,7 @@ Third User:
 
 Created Dynamic Groups that will assign membership according to the user's attributes (Job Title):
 
-<img width="1000" height="800" alt="Dynamic Group List" src="images/Dynamic Group List.png"/> 
+<img width="1000" height="800" alt="Dynamic Group List" src="images/Dynamic Groups List.png"/> 
 
 
 
