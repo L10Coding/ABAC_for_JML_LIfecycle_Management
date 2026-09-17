@@ -60,4 +60,7 @@ Created Dynamic Groups that will assign membership according to the user's attri
 <img width="1000" height="800" alt="Zoom Assigned Groups" src="images/Zoom Assigned Groups.png"/> 
 
 
+## 📘 Establishing Conditional Access Policies according to Dynamic Group/Department
+
+<img width="1000" height="800" alt="Zoom Configuration" src="images/CA Policy - Selecting Group.png"/> 
 
