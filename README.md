@@ -98,3 +98,14 @@ User `Jason Jones` signing in:
 
 <img width="1000" height="800" alt="User Sign-In Audit Logs Confirmation" src="images/App Sign-In Activity Details - Jason Jones.png"/> 
 
+
+## 📘 Mover of J-M-L:
+
+User `Adam Brown` is moving to a new department:
+- User's profile attributes were updated to reflect new department (Marketing -> Sales)
+- No longer can access `Marketing` resources
+- Now able to access `Sales` resources
+- Access to `CA-Policy-Test-App` remains, and the `Conditional Access policy` established for the `Sales` team now applies.
+- Automated process allows for RBAC to be implemented.
+
+
