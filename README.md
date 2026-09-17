@@ -32,7 +32,7 @@ Third User:
 <img width="1000" height="800" alt="User Michelle Smith confirmation" src="images/Michelle Smith - Properties.jpg"/> 
 
 
-##  📝 Creatinging Dynamic Security Groups
+##  📝 Creating Dynamic Security Groups
 
 Created Dynamic Groups that will assign membership according to the user's attributes (Job Title):
 
@@ -61,6 +61,11 @@ Created Dynamic Groups that will assign membership according to the user's attri
 
 
 ## 🔐 Establishing Conditional Access Policies according to Dynamic Group/Department
+
+| Group | Controls |
+|------|----------|
+| Marketing | Require MFA |
+| Sales | Session Controls |
 
 <img width="1000" height="800" alt="CA Policy - Selecting Group - Marketing" src="images/CA Policy - Selecting Group.png"/> 
 
