@@ -116,6 +116,7 @@ To add an additional layer of protection, I created specific security rules tail
 
 <img width="1000" height="800" alt="Policy-Test App - Session Control" src="images/CA - CA Policy Test App - Sales - Session Control.png"/> 
 
+---
 
 ## 5. Testing the **Joiner** Experience:
 
@@ -132,6 +133,7 @@ Logged in as user `Jason Jones` to verify the onboarding workflow:
 
 <img width="1000" height="800" alt="User Sign-In Audit Logs Confirmation" src="images/App Sign-In Activity Details - Jason Jones.png"/> 
 
+---
 
 ## 🔄 Phase 2: The "Mover" Process (Role Transitions):
 
@@ -151,6 +153,8 @@ Role transition scenario:
 <img width="1000" height="800" alt="User Sign-In Log Confirmation" src="images/Mover - App Sign-in Log - Adam Brown.png"/> 
 
 <img width="1000" height="800" alt="User Sign-In Audit Logs Confirmation" src="images/Mover - Sign-in Activity - Adam Brown.png"/> 
+
+---
 
 ## 🚪 Phase 3: The "Leaver" Process (Offboarding & De-provisioning):
 The Leaver phase secures the business when a worker departs. Disabling access quickly stops former workers from accessing company files from the outside.
