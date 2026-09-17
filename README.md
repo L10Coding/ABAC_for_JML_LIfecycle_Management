@@ -116,3 +116,11 @@ User `Adam Brown` is moving to a new department:
 
 <img width="1000" height="800" alt="User Sign-In Audit Logs Confirmation" src="images/Mover - Sign-in Activity - Adam Brown.png"/> 
 
+## 📘 Leaver of J-M-L:
+
+User `Michelle Smith` is leaving the organization.
+- Users profile was disabled via user properties
+- User was unable to sign-in
+- Sign-in logs indicate an unsuccessfull log-in
+
+
