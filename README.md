@@ -85,9 +85,16 @@ Created Dynamic Groups that will assign membership according to the user's attri
 ## 📘 Joiner of J-M-L:
 
 User `Jason Jones` signing in:
-- Access to `CA-Policy-Test-App` confirmed via `Sign-In` and `Audit` logs
 - User was prompted to update their password upon signing-in for the first time
 - User was prompted to utilize MS Authenticator and was able to successfully enroll.
-- Sign-In logs confirmed the `Conditional Access Policy` was triggered and user successfully met the requirement.
+- Access to `CA-Policy-Test-App` confirmed via `Sign-In` and `Audit` logs
+- Sign-In Activity logs confirmed the `Conditional Access Policy` was triggered and user successfully met the requirement, and the Conditional Access policy for the Marketing team was not applied to this member of the Sales team.
 
 <img width="1000" height="800" alt="User Sign-In password prompt" src="images/User Sign-In - Jason  - Password Prompt.png"/> 
+
+<img width="1000" height="800" alt="User Sign-In Authenticator Added" src="images/User Sign-In - Authenticator Added.png"/> 
+
+<img width="1000" height="800" alt="User Sign-In Audit Logs Confirmation" src="images/App Audit Logs - Jason Jones.png"/> 
+
+<img width="1000" height="800" alt="User Sign-In Audit Logs Confirmation" src="images/App Sign-In Activity Details - Jason Jones.png"/> 
+
