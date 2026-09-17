@@ -123,4 +123,13 @@ User `Michelle Smith` is leaving the organization.
 - User was unable to sign-in
 - Sign-in logs indicate an unsuccessfull log-in
 
+<img width="1000" height="800" alt="Account disabled in Entra ID" src="images/Leaver - Account Disabled - Michelle Smith.png"/> 
+
+<img width="1000" height="800" alt="Disabled user sign-in attempt" src="images/Leaver - Signon Attempt - Michelle Smith.png"/> 
+
+<img width="1000" height="800" alt="Error message when user attempts to sign in" src="images/Leaver - Account Disabled Confirmation - Michelle Smith.png"/> 
+
+<img width="1000" height="800" alt="Sign-in logs confirming user was unable to log-in" src="images/Leaver - SigninLog Showing Failure - Michelle Smith.png"/> 
+
+
 
