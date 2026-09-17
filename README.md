@@ -70,3 +70,6 @@ Created Dynamic Groups that will assign membership according to the user's attri
 
 <img width="1000" height="800" alt="CA Policy - Selecting Group - Sales" src="images/CA Policy - Selecting Group - Sales.png"/> 
 
+<img width="1000" height="800" alt="CA Policy - Selecting Resource - Sales" src="images/CA Policy - Selecting Resource - Sales.png"/> 
+
+<img width="1000" height="800" alt="CA Policy - Granting Session Control - Sales" src="images/CA Policy - Session Control - Sales.png"/> 
