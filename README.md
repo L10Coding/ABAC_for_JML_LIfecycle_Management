@@ -53,14 +53,16 @@ Created Dynamic Groups that will assign membership according to the user's attri
 <img width="1000" height="800" alt="Dynamic Group Membership - Marketing" src="images/Dynamic Group Membership - Marketing.jpg"/> 
 
 
-**Configuring the Zoom enterprise application access for Dynamic Group members with RBAC:**
+## 🔧 Configuring the Zoom enterprise application access for Dynamic Group members with RBAC:
 
 <img width="1000" height="800" alt="Zoom Configuration" src="images/Zoom Configuration.png"/> 
 
 <img width="1000" height="800" alt="Zoom Assigned Groups" src="images/Zoom Assigned Groups.png"/> 
 
 
-## 📘 Establishing Conditional Access Policies according to Dynamic Group/Department
+## 🔐 Establishing Conditional Access Policies according to Dynamic Group/Department
 
-<img width="1000" height="800" alt="Zoom Configuration" src="images/CA Policy - Selecting Group.png"/> 
+<img width="1000" height="800" alt="CA Policy - Selecting Group - Marketing" src="images/CA Policy - Selecting Group.png"/> 
+
+<img width="1000" height="800" alt="CA Policy - Selecting Group - Sales" src="images/CA Policy - Selecting Group - Sales.png"/> 
 
