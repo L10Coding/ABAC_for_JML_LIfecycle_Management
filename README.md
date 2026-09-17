@@ -31,21 +31,24 @@ Second User:
 Third User:
 <img width="1000" height="800" alt="User Michelle Smith confirmation" src="images/Michelle Smith - Properties.jpg"/> 
 
+
 ##  📝 Creatinging Dynamic Security Groups
 
 Created Dynamic Groups that will assign membership according to the user's attributes (Job Title):
 
 <img width="1000" height="800" alt="Dynamic Group Creation - Marketing" src="images/Dynamic Group Creation - Marketing.jpg"/> 
 
+
 **Confirmation of Dynamic Groups created for each department:**
 
 <img width="1000" height="800" alt="Dynamic Group List" src="images/Dynamic Groups List.png"/> 
 
-**Policy ran correctly, and now shows the Marketing user(s) as a member of the Dynamic Group "DG-Marketing-Users":**
 
-<img width="1000" height="800" alt="Dynamic Group Membership - HR" src="images/Dynamic Group Membership - HR.jpg"/> 
+**Policy ran correctly, and now shows the users as members of their respective Dynamic Group:**
 
-<img width="1000" height="800" alt="Dynamic Group Membership - Sales" src="images/Dynamic Group Membership - Sales.jpg"/> 
+<img width="1000" height="800" alt="Dynamic Group Membership - HR" src="images/Dynamic Group Membership - HR.png"/> 
+
+<img width="1000" height="800" alt="Dynamic Group Membership - Sales" src="images/Dynamic Group Membership - Sales.png"/> 
 
 <img width="1000" height="800" alt="Dynamic Group Membership - Marketing" src="images/Dynamic Group Membership - Marketing.jpg"/> 
 
