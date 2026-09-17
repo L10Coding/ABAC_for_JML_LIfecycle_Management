@@ -52,3 +52,6 @@ Created Dynamic Groups that will assign membership according to the user's attri
 
 <img width="1000" height="800" alt="Dynamic Group Membership - Marketing" src="images/Dynamic Group Membership - Marketing.jpg"/> 
 
+
+Configuring the Zoom enterprise application access for Dynamic Group members with RBAC:
+
